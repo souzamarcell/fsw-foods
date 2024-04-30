@@ -27,3 +27,5 @@ zi.md
 zi.txt
 /.vscode
 .vscode
+
+.postgres-data
