@@ -594,9 +594,6 @@ video {
 .h-9 {
   height: 2.25rem;
 }
-.min-h-screen {
-  min-height: 100vh;
-}
 .w-10 {
   width: 2.5rem;
 }
@@ -608,9 +605,6 @@ video {
 }
 .justify-center {
   justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -646,32 +640,37 @@ video {
 .bg-destructive {
   background-color: hsl(var(--destructive));
 }
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
 .bg-primary {
   background-color: hsl(var(--primary));
-}
-.bg-secondary {
-  background-color: hsl(var(--secondary));
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
-.bg-orange-600 {
+.bg-red-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
-.p-24 {
-  padding: 6rem;
-}
-.p-6 {
-  padding: 1.5rem;
+.bg-secondary {
+  background-color: hsl(var(--secondary));
 }
 .p-5 {
   padding: 1.25rem;
 }
+.p-6 {
+  padding: 1.5rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -684,10 +683,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
 }
 .py-5 {
   padding-top: 1.25rem;
