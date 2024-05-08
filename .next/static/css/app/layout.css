@@ -575,10 +575,6 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
 .flex {
   display: flex;
 }
@@ -606,6 +602,9 @@ video {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -628,6 +627,9 @@ video {
 .border {
   border-width: 1px;
 }
+.border-none {
+  border-style: none;
+}
 .border-input {
   border-color: hsl(var(--input));
 }
@@ -640,26 +642,17 @@ video {
 .bg-destructive {
   background-color: hsl(var(--destructive));
 }
-.bg-orange-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
-}
 .bg-primary {
   background-color: hsl(var(--primary));
-}
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-.bg-red-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 .bg-secondary {
   background-color: hsl(var(--secondary));
 }
-.p-5 {
-  padding: 1.25rem;
+.bg-transparent {
+  background-color: transparent;
+}
+.object-cover {
+  object-fit: cover;
 }
 .p-6 {
   padding: 1.5rem;
@@ -667,10 +660,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -684,12 +673,15 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .pt-0 {
   padding-top: 0px;
+}
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .text-2xl {
   font-size: 1.5rem;

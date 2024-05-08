@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <h1>Prolam 2024 - System </h1>
+        {/* <h1>Prolam 2024 - System </h1> */}
         {children}
         </body>
     </html>
