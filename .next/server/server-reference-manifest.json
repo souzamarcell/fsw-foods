@@ -1,5 +1,22 @@
 {
-  "node": {},
+  "node": {
+    "3d135882ebb4a1a46deddf70700abf7be66067bb": {
+      "workers": {
+        "app/restaurants/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Csys%5C%5CCursosDev%5C%5Cpizza%5C%5Cfsw-foods%5C%5Capp%5C%5Crestaurants%5C%5C_actions%5C%5Csearch.ts%22%2C%5B%22searchForRestaurants%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/restaurants/page": "action-browser"
+      }
+    },
+    "debf247e4b99bf950852387e9f2b1053e102f529": {
+      "workers": {
+        "app/restaurants/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Csys%5C%5CCursosDev%5C%5Cpizza%5C%5Cfsw-foods%5C%5Capp%5C%5Crestaurants%5C%5C_actions%5C%5Csearch.ts%22%2C%5B%22searchForRestaurants%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/restaurants/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "0aBqHwGI/FRhSAe/vO0Vm1y2v6p4ScyKIwi77QpsdDE="
+  "encryptionKey": "7Y5XkOK6NNSnfvAN9ZlqvCh0Kmi0ZsPSOciomvwGcqE="
 }

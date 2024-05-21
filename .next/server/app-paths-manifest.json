@@ -1,8 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/restaurants/page": "app/restaurants/page.js",
   "/page": "app/page.js",
-  "/restaurants/recommended/page": "app/restaurants/recommended/page.js",
-  "/categories/[id]/products/page": "app/categories/[id]/products/page.js",
-  "/restaurants/[id]/page": "app/restaurants/[id]/page.js",
-  "/products/[id]/page": "app/products/[id]/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
