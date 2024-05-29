@@ -10,8 +10,6 @@ interface ProductPageProps {
 }
 
 const ProductPage = async ({ params: { id } }: ProductPageProps) => {
-  // const [quantity, setQuantity] = useState(1);
-
   const product = await db.product.findUnique({
     where: {
       id,
@@ -31,7 +29,7 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
         name: "Sucos",
       },
       restaurant: {
-        id: product?.restaurant.id, // sucos do mesmo restaurante. 
+        id: product?.restaurant.id,
       },
     },
     include: {
@@ -39,7 +37,6 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
     },
   });
 
-  // return <div>product page {id}</div>;
   return (
     <div>
       {/* IMAGEM */}

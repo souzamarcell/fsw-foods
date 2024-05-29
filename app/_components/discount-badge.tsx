@@ -2,7 +2,6 @@ import { Product } from "@prisma/client";
 import { ArrowDownIcon } from "lucide-react";
 
 interface DiscountBadgeProps {
-  // discountPercentage: number;
   product: Pick<Product, "discountPercentage">;
 }
 

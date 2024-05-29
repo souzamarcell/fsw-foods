@@ -5,9 +5,7 @@ import Image from "next/image";
 import { StarIcon } from "lucide-react";
 import DeliveryInfo from "@/app/_components/delivery-info";
 import ProductList from "@/app/_components/product-list";
-// import CartBanner from "./_components/cart-banner";
-// import { getServerSession } from "next-auth";
-// import { authOptions } from "@/app/_lib/auth";
+import CartBanner from "./_components/cart-banner";
 
 interface RestaurantPageProps {
   params: {
@@ -53,8 +51,6 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
     },
   });
 
-  // console.log({restaurant})
-
   if (!restaurant) {
     return notFound();
   }
@@ -63,15 +59,14 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
     <div>
       <RestaurantImage restaurant={restaurant} />
 
-      {/* TITULO */}
       <div className="relative z-50 mt-[-1.5rem] flex items-center justify-between rounded-tl-3xl rounded-tr-3xl bg-white px-5 pt-5">
+        {/* TITULO */}
         <div className="flex items-center gap-[0.375rem]">
-          <div className="relative h-14 w-14">
+          <div className="relative h-8 w-8">
             <Image
               src={restaurant.imageUrl}
               alt={restaurant.name}
               fill
-              sizes="100%"
               className="rounded-full object-cover"
             />
           </div>
@@ -84,12 +79,10 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
         </div>
       </div>
 
-      {/* restaurant */}
       <div className="px-5">
         <DeliveryInfo restaurant={restaurant} />
       </div>
 
-      {/* categories */}
       <div className="mt-3 flex gap-4 overflow-x-scroll px-5 [&::-webkit-scrollbar]:hidden">
         {restaurant.categories.map((category) => (
           <div
@@ -103,7 +96,6 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
         ))}
       </div>
 
-      {/* produtos mais pedidos */}
       <div className="mt-6 space-y-4">
         {/* TODO: mostrar produtos mais pedidos quando implementarmos realização de pedido */}
         <h2 className="px-5  font-semibold">Mais Pedidos</h2>
@@ -118,8 +110,8 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
         </div>
       ))}
 
-{/* <CartBanner restaurant={restaurant} /> */}
-
+      <CartBanner restaurant={restaurant} />
+     
     </div>
   );
 };
