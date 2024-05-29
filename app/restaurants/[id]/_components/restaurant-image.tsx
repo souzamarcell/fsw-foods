@@ -42,4 +42,5 @@ const RestaurantImage = ({ restaurant }: RestaurantImageProps) => {
   );
 };
 
+
 export default RestaurantImage;
