@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install && prisma generate",
-    "postinstall": "husky install"
+    "prepare": "husky install",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "ts-node ./prisma/seed.ts"
