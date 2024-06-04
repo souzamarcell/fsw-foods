@@ -35,4 +35,5 @@ const ProductImage = ({ product }: ProductImageProps) => {
   );
 };
 
+
 export default ProductImage;

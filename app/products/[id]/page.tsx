@@ -40,6 +40,7 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
   return (
     <div>
       {/* IMAGEM */}
+      {/* IMAGEM */}
       <ProductImage product={product} />
 
       {/* TITULO E PREÇO */}
@@ -47,5 +48,6 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
     </div>
   );
 };
+
 
 export default ProductPage;
