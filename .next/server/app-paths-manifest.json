@@ -1,4 +1,14 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/categories/[id]/products/page": "app/categories/[id]/products/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/my-favorite-restaurants/page": "app/my-favorite-restaurants/page.js",
+  "/my-orders/page": "app/my-orders/page.js",
   "/page": "app/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+  "/products/[id]/page": "app/products/[id]/page.js",
+  "/products/recommended/page": "app/products/recommended/page.js",
+  "/restaurants/[id]/page": "app/restaurants/[id]/page.js",
+  "/restaurants/page": "app/restaurants/page.js",
+  "/restaurants/recommended/page": "app/restaurants/recommended/page.js"
 }
