@@ -111,8 +111,9 @@ const Header = () => {
             <Button
               variant="ghost"
               className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
+              asChild
             >
-              <Link className="mt-4" href="/">
+              <Link href="/">
                 <HomeIcon size={16} />
                 <span className="block">Início</span>
               </Link>
