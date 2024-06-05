@@ -31,7 +31,8 @@ const Header = () => {
   return (
     <div className="flex justify-between px-5 pt-6">
       <Link href="/">
-        <div className="relative h-[30px] w-[100px]">
+        {/* <div className="relative h-[30px] w-[100px]"> */}
+        <div className="relative h-[30px] w-[170px]">
           <Image
             src="/logo.png"
             alt="FSW Foods"
@@ -41,6 +42,14 @@ const Header = () => {
           />
         </div>
       </Link>
+
+      <Link href="https://wa.me/5592991357070" target="_blank">
+        <Avatar>
+          <AvatarImage src="/marcell.png" alt="imagem Marcell" />
+        </Avatar>
+      </Link>
+      {/* <p className="text-{x5}"></p> */}
+      {/* <div className="text-xs">Marcell</div> */}
 
       <Sheet>
         <SheetTrigger asChild>
