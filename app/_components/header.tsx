@@ -29,10 +29,11 @@ const Header = () => {
   const handleSignInClick = () => signIn();
 
   return (
-    <div className="flex justify-between px-5 pt-6">
-      <Link href="/">
+    // <div className="flex justify-between px-5 pt-6">
+    <div className="flex justify-center px-5 pt-6">
+      <Link className="mt-4" href="/">
         {/* <div className="relative h-[30px] w-[100px]"> */}
-        <div className="relative h-[30px] w-[170px]">
+        <div className="relative h-[32px] w-[170px]">
           <Image
             src="/logo.png"
             alt="FSW Foods"
@@ -43,13 +44,14 @@ const Header = () => {
         </div>
       </Link>
 
-      <Link href="https://wa.me/5592991357070" target="_blank">
-        <Avatar>
-          <AvatarImage src="/marcell.png" alt="imagem Marcell" />
-        </Avatar>
-      </Link>
-      {/* <p className="text-{x5}"></p> */}
-      {/* <div className="text-xs">Marcell</div> */}
+      <div className="relative h-[30px] w-[170px] border-gray-400">
+        <Link href="https://wa.me/5592991357070" target="_blank">
+          <Avatar>
+            <AvatarImage src="/marcell.png" alt="imagem Marcell" />
+          </Avatar>
+        </Link>
+        <div className="text-xs font-bold text-red-700">Marcell</div>
+      </div>
 
       <Sheet>
         <SheetTrigger asChild>
@@ -110,8 +112,10 @@ const Header = () => {
               variant="ghost"
               className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
             >
-              <HomeIcon size={16} />
-              <span className="block">Início</span>
+              <Link className="mt-4" href="/">
+                <HomeIcon size={16} />
+                <span className="block">Início</span>
+              </Link>
             </Button>
 
             {data?.user && (

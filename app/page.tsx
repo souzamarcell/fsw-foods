@@ -84,6 +84,7 @@ const Home = async () => {
         </div>
         <RestaurantList />
       </div>
+      <div className="space-y-2 pt-2"></div>
     </>
   );
 };
